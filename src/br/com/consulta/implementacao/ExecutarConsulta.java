@@ -1,5 +1,6 @@
 package br.com.consulta.implementacao;
 
+import br.com.consulta.beans.Agendamento;
 import br.com.consulta.beans.Medico;
 import br.com.consulta.beans.Paciente;
 import br.com.consulta.util.input;
@@ -19,6 +20,14 @@ public class ExecutarConsulta {
 		Medico med = new Medico(input.texto("CRM:"), input.texto("Médico:"));
 		
 		System.out.println(med.apresentar());
+		
+		Agendamento agenda = new Agendamento(input.texto("Data:"), input.texto("Hora:"), pac, input.decimal("Valor:"), med);
+		
+		System.out.println(agenda.agendar());
+		System.out.println(agenda.mostrar());
+		
+		
 	}
+	
 
 }

@@ -29,6 +29,6 @@ public class Medico {
 	};
 	
 	public String apresentar() {
-		return "Nome:" + nome + " - CRM:" + crm;
+		return "Médico:" + nome + " - CRM:" + crm;
 	}
 }

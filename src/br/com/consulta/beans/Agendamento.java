@@ -72,7 +72,7 @@ public class Agendamento {
 	}
 	
 	public String mostrar() {
-		return "Data:" + data + " - Hora:" + hora + " - Paciente" + paciente.getNome() + " - Medico:" + medico.getNome();
+		return "Data:" + data + " - Hora:" + hora + " - Paciente:" + paciente.getNome() + " - Medico:" + medico.getNome();
 	}
 	
 }
