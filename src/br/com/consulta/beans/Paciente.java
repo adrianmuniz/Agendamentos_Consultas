@@ -39,7 +39,7 @@ public class Paciente {
 	}
 	
 	public String apresentar() {
-		return "Nome:" + nome + " cpf:" + cpf + " celular" + fone;
+		return "Nome:" + nome + " - CPF:" + cpf + " - Celular:" + fone;
 	}
 	
 }
