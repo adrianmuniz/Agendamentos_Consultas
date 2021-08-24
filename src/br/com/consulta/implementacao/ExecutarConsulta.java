@@ -12,6 +12,10 @@ public class ExecutarConsulta {
 		pac.setNome(input.texto("Nome:"));
 		pac.setCpf(input.texto("CPF:"));
 		pac.setFone(input.texto("Telefone:"));
+		
+		System.out.println(pac.apresentar());
+		
+		
 	}
 
 }

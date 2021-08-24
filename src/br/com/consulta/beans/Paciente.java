@@ -38,6 +38,8 @@ public class Paciente {
 		this.fone = fone;
 	}
 	
-	
+	public String apresentar() {
+		return "Nome:" + nome + " cpf:" + cpf + " celular" + fone;
+	}
 	
 }
