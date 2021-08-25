@@ -1,15 +1,15 @@
 package br.com.consulta.beans;
 
-public class Medico {
+public class Medico extends Pessoa {
 	private String crm;
-	private String nome;
+	private String especialidade;
 	
-	public Medico() {}
-
-	public Medico(String crm, String nome) {
-		super();
+	public Medico() {};
+	
+	public Medico(String crm, String especialidade, String cpf, String nome, String fone) {
+		super(cpf, nome, fone);
 		this.crm = crm;
-		this.nome = nome;
+		this.especialidade = especialidade;
 	}
 
 	public String getCrm() {
@@ -20,15 +20,23 @@ public class Medico {
 		this.crm = crm;
 	}
 
-	public String getNome() {
-		return nome;
+	public String getEspecialidade() {
+		return especialidade;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	};
+	public void setEspecialidade(String especialidade) {
+		this.especialidade = especialidade;
+	}
+
+	public void incluir() {
+		
+	}
 	
-	public String apresentar() {
-		return "Médico:" + nome + " - CRM:" + crm;
+	public void alteracao() {
+		
+	}
+	
+	public void consulta() {
+		
 	}
 }
