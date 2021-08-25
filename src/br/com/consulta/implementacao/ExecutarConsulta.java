@@ -9,6 +9,7 @@ public class ExecutarConsulta {
 
 	public static void main(String[] args) {
 		
+		String opcao;
 		Paciente pac = new Paciente();
 
 		pac.setNome(input.texto("Paciente:"));
@@ -17,17 +18,20 @@ public class ExecutarConsulta {
 		
 		System.out.println(pac.apresentar());
 		
-		Medico med = new Medico(input.texto("CRM:"), input.texto("Médico:"));
+		Medico med1 = new Medico(input.texto("CRM:"), input.texto("Médico:"));
+		Medico med2 = new Medico(input.texto("CRM:"), input.texto("Médico:"));
 		
-		System.out.println(med.apresentar());
+		System.out.println(med1.apresentar());
+		System.out.println(med2.apresentar());
 		
-		Agendamento agenda = new Agendamento(input.texto("Data:"), input.texto("Hora:"), pac, input.decimal("Valor:"), med);
+		//Escolhendo médico
+		
+		opcao = input.texto("Escolha o médico: 1 = " + med1.getNome() + " - 2 =" + med2.getNome());
+		
+		Agendamento agenda = new Agendamento(input.texto("Data:"), input.texto("Hora:"), pac, input.decimal("Valor:"), med1);
 		
 		System.out.println(agenda.agendar());
 		System.out.println(agenda.mostrar());
 		
-		
 	}
-	
-
 }
