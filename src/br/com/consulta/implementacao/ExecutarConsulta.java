@@ -2,6 +2,7 @@ package br.com.consulta.implementacao;
 
 import br.com.consulta.beans.Funcionario;
 import br.com.consulta.beans.Medico;
+import br.com.consulta.beans.Paciente;
 import br.com.consulta.beans.Pessoa;
 
 public class ExecutarConsulta {
@@ -17,5 +18,10 @@ public class ExecutarConsulta {
 		Funcionario f = new Funcionario("12231", "Cainã", "998977", 5000f, "10/08/2019", null);
 		
 		System.out.println("Funcionario: " + f.getNome() + " Dtadm: " + f.getDtadmissao() + " Salario:" + f.getSalario());
+		
+		Paciente pa = new Paciente("1234", "Antonio", "98987");
+		
+		System.out.println("Paciente: " + pa.getNome() + " cpf:" + pa.getCpf());
+		
 	}
 }
