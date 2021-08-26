@@ -39,16 +39,5 @@ public class Funcionario extends Pessoa {
 		this.dtdemissao = dtdemissao;
 	}
 	
-	public void cadastrar() {
-		
-	}
-	
-	public void alterar() {
-		
-	}
-	
-	public void pesquisar() {
-		
-	}
 	
 }

@@ -8,15 +8,4 @@ public class Paciente extends Pessoa {
 		super(cpf, nome, fone);
 	}
 
-	public void incluir() {
-		
-	}
-	
-	public void alterar() {
-		
-	}
-	
-	public void consultar() {
-		
-	}
 }

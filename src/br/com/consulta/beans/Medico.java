@@ -28,15 +28,4 @@ public class Medico extends Pessoa {
 		this.especialidade = especialidade;
 	}
 
-	public void incluir() {
-		
-	}
-	
-	public void alteracao() {
-		
-	}
-	
-	public void consulta() {
-		
-	}
 }

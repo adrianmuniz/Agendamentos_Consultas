@@ -1,6 +1,6 @@
 package br.com.consulta.beans;
 
-public class Pessoa {
+public class Pessoa implements MetodoPadrao {
 
 	private String cpf;
 	private String nome;
@@ -39,6 +39,19 @@ public class Pessoa {
 		this.fone = fone;
 	}
 	
+	public String registrar() {
+		return "Sucesso";
+	}
 	
+	public String incluir() {
+		return "Incluir ok";
+	}
 	
+	public String alterar() {
+		return "Alterar ok";
+	}
+	
+	public String pesquisar(String texto) {
+		return "Pesquisa: " + texto;
+	}
 }

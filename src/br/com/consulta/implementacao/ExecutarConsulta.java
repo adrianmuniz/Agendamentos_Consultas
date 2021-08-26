@@ -14,6 +14,8 @@ public class ExecutarConsulta {
 		Medico m = new Medico("CRM1234", "Pediatra", "22321", "Cainã", "9898897");
 		
 		System.out.println("Medico: " + m.getNome());
+
+		System.out.println(m.registrar());
 		
 		Funcionario f = new Funcionario("12231", "Cainã", "998977", 5000f, "10/08/2019", null);
 		
