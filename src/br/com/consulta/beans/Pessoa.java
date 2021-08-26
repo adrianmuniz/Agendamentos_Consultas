@@ -1,5 +1,7 @@
 package br.com.consulta.beans;
 
+import br.com.consulta.interfaces.MetodoPadrao;
+
 public class Pessoa implements MetodoPadrao {
 
 	private String cpf;

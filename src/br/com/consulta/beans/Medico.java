@@ -28,4 +28,9 @@ public class Medico extends Pessoa {
 		this.especialidade = especialidade;
 	}
 
+	public String pesquisar (String texto) {
+		return "Pesquisa: " + super.getNome() + " - " + especialidade;
+	}
+	
+	
 }
