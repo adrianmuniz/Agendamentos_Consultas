@@ -6,9 +6,9 @@ public class Gerente extends Funcionario {
 	
 	public Gerente() {}
 
-	public Gerente(String cpf, String nome, String fone, float salario, String dtadmissao, String dtdemissao,
-			String departamento, String deptResponsavel) {
-		super(cpf, nome, fone, salario, dtadmissao, dtdemissao, departamento);
+	
+	public Gerente(float salario, String dtadmissao, String dtdemissao, String departamento, String deptResponsavel) {
+		super(salario, dtadmissao, dtdemissao, departamento);
 		this.deptResponsavel = deptResponsavel;
 	}
 
@@ -20,5 +20,8 @@ public class Gerente extends Funcionario {
 		this.deptResponsavel = deptResponsavel;
 	};
 	
-	
+	@Override
+	public double participacaoLucros() {
+		return super.getSalario() * 0.5;
+	}
 }

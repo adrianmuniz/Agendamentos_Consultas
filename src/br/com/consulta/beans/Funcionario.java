@@ -11,9 +11,8 @@ public class Funcionario extends Pessoa {
 	public Funcionario() {}
 
 
-	public Funcionario(String cpf, String nome, String fone, float salario, String dtadmissao, String dtdemissao,
-			String departamento) {
-		super(cpf, nome, fone);
+	public Funcionario(float salario, String dtadmissao, String dtdemissao, String departamento) {
+		super();
 		this.salario = salario;
 		this.dtadmissao = dtadmissao;
 		this.dtdemissao = dtdemissao;
@@ -58,7 +57,11 @@ public class Funcionario extends Pessoa {
 
 	public void setDepartamento(String departamento) {
 		this.departamento = departamento;
-	};
+	}
 
-	
+
+	public double participacaoLucros() {
+		return salario * 0.2;
+	}
+
 }
