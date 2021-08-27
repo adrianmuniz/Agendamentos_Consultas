@@ -9,7 +9,6 @@ public class ExecutarConsulta {
 
 	public static void main(String[] args) {
 		
-		Pessoa p = new Pessoa ("123456", "Cainã", "9898987");
 		
 		Medico m = new Medico("CRM1234", "Pediatra", "22321", "Cainã", "9898897");
 		
