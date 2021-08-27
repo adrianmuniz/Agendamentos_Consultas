@@ -1,13 +1,14 @@
 package br.com.consulta.beans;
 
-public class Medico extends Pessoa {
+public class Medico extends Funcionario {
 	private String crm;
 	private String especialidade;
 	
-	public Medico() {};
-	
-	public Medico(String crm, String especialidade, String cpf, String nome, String fone) {
-		super(cpf, nome, fone);
+	public Medico() {}
+
+	public Medico(String cpf, String nome, String fone, float salario, String dtadmissao, String dtdemissao,
+			String departamento, String crm, String especialidade) {
+		super(cpf, nome, fone, salario, dtadmissao, dtdemissao, departamento);
 		this.crm = crm;
 		this.especialidade = especialidade;
 	}
@@ -26,11 +27,7 @@ public class Medico extends Pessoa {
 
 	public void setEspecialidade(String especialidade) {
 		this.especialidade = especialidade;
-	}
-
-	public String pesquisar (String texto) {
-		return "Pesquisa: " + super.getNome() + " - " + especialidade;
-	}
+	};
 	
 	
 }
